@@ -49,6 +49,83 @@ footer{background:#061c14;color:#d8e5de;padding:45px 0}.footgrid{display:grid;gr
 .hero-photo img{width:100%;height:100%;object-fit:cover;border-radius:30px;display:block}
 
 .brand{display:flex;align-items:center;gap:10px}
+  .wholesale {
+  background: #fffdf5;
+  padding: 70px 0;
+}
+
+.wholesale .head {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 35px;
+}
+
+.wholesale .head h2 {
+  color: var(--forest);
+  font-size: 32px;
+  margin: 8px 0 12px;
+}
+
+.wholesale .head p {
+  color: #5e665f;
+  line-height: 1.7;
+}
+
+.wholesale-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.wholesale-gallery figure {
+  margin: 0;
+  background: #fff;
+  border: 1px solid #eee5d0;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0,0,0,.08);
+}
+
+.wholesale-gallery img {
+  display: block;
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.wholesale-gallery figcaption {
+  padding: 14px 16px;
+  text-align: center;
+  font-weight: 700;
+  color: var(--forest);
+}
+
+.wholesale-cta {
+  text-align: center;
+  margin-top: 35px;
+}
+
+.wholesale-cta p {
+  color: #5e665f;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+  .wholesale-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .wholesale-gallery img {
+    height: auto;
+    max-height: 420px;
+    object-fit: cover;
+  }
+
+  .wholesale .head h2 {
+    font-size: 26px;
+  }
+}
 .brand-logo{width:34px;height:34px;border-radius:10px;background:var(--forest);display:grid;place-items:center;overflow:hidden}
 .brand-logo img{width:28px;height:28px;object-fit:contain}
 .hero-logo{margin-bottom:12px}
