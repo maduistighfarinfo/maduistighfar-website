@@ -284,26 +284,214 @@ footer p{color:#d8e5df}
 </div>
 </section>
 
-<section class="description">
-  <div class="wrap">
+/* =========================================
+   TENTANG PRODUK - BILINGUAL
+   ========================================= */
 
-    <section class="description">
-  <div class="wrap">
+.description{
+  background:#fbf7ed;
+  padding:80px 0;
+  color:#26352f;
+}
 
-    <div class="head">
-      <div class="eyebrow">Tentang Produk • About the Product</div>
-      <h2>Madu Istighfar</h2>
-    </div>
+.description > .wrap{
+  width:min(100% - 32px, 980px);
+  margin:auto;
+}
 
-    <div class="description-card">
+/* Judul */
+.description .head{
+  text-align:center;
+  margin-bottom:42px;
+}
 
-      <div class="attention">
-        ⚠️ <strong>Madu ISTIGHFAR Bukan Madu Lebah Ternak atau Madu Campuran!</strong>
-        <br>
-        <em>Madu ISTIGHFAR is not farmed-bee honey or blended honey!</em>
-      </div>
+.description .head .eyebrow{
+  color:#d5a93a;
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  margin-bottom:10px;
+}
 
-  </div>
+.description .head h2{
+  margin:0;
+  color:#064b3c;
+  font-size:42px;
+  line-height:1.15;
+  font-weight:800;
+}
+
+/* Kotak utama */
+.description-card{
+  background:#ffffff;
+  border:1px solid #e7dfcc;
+  border-radius:24px;
+  padding:38px 44px;
+  box-shadow:0 12px 35px rgba(6,75,60,.08);
+}
+
+/* Peringatan */
+.description-card .attention{
+  background:#fff3c9;
+  border:1px solid #ead58a;
+  border-radius:16px;
+  padding:18px 22px;
+  margin-bottom:34px;
+  color:#5d4b18;
+  font-size:16px;
+  line-height:1.6;
+}
+
+.description-card .attention strong{
+  color:#604b12;
+}
+
+.description-card .attention em{
+  display:block;
+  margin-top:5px;
+  color:#806b32;
+  font-size:14px;
+}
+
+/* Paragraf */
+.description-card p{
+  margin:0 0 26px;
+  color:#394740;
+  font-size:16px;
+  line-height:1.8;
+  text-align:left;
+}
+
+/* Label Indonesia */
+.description-card p strong{
+  display:inline-block;
+  color:#064b3c;
+  font-size:15px;
+  font-weight:800;
+  margin-bottom:5px;
+}
+
+/* Teks English */
+.description-card p em{
+  color:#68756f;
+}
+
+/* Judul bagian */
+.description-card h3{
+  color:#064b3c;
+  font-size:23px;
+  line-height:1.3;
+  margin:38px 0 18px;
+  font-weight:800;
+}
+
+/* List */
+.description-card ul{
+  margin:0 0 32px;
+  padding-left:24px;
+}
+
+.description-card li{
+  color:#394740;
+  font-size:15px;
+  line-height:1.65;
+  margin-bottom:12px;
+}
+
+.description-card li em{
+  display:block;
+  color:#78827e;
+  font-size:14px;
+  line-height:1.5;
+  margin-top:2px;
+}
+
+/* Informasi ketersediaan */
+.description-card .muted-note{
+  color:#68756f;
+  font-size:14px;
+  line-height:1.7;
+}
+
+/* =========================================
+   TAMPILAN HP
+   ========================================= */
+
+@media (max-width:600px){
+
+  .description{
+    padding:55px 0;
+  }
+
+  .description > .wrap{
+    width:calc(100% - 24px);
+  }
+
+  .description .head{
+    margin-bottom:28px;
+  }
+
+  .description .head .eyebrow{
+    font-size:10px;
+    letter-spacing:1.5px;
+  }
+
+  .description .head h2{
+    font-size:30px;
+  }
+
+  .description-card{
+    padding:22px 20px;
+    border-radius:18px;
+  }
+
+  .description-card .attention{
+    padding:15px 16px;
+    margin-bottom:25px;
+    font-size:14px;
+    line-height:1.55;
+  }
+
+  .description-card .attention em{
+    font-size:13px;
+  }
+
+  .description-card p{
+    font-size:14px;
+    line-height:1.75;
+    margin-bottom:22px;
+  }
+
+  .description-card p strong{
+    font-size:14px;
+  }
+
+  .description-card h3{
+    font-size:20px;
+    margin-top:30px;
+    margin-bottom:15px;
+  }
+
+  .description-card ul{
+    padding-left:20px;
+  }
+
+  .description-card li{
+    font-size:14px;
+    line-height:1.6;
+    margin-bottom:10px;
+  }
+
+  .description-card li em{
+    font-size:13px;
+  }
+
+  .description-card .muted-note{
+    font-size:13px;
+    line-height:1.65;
+  }
+}
 </section>
       <p>
         <strong>Bahasa Indonesia:</strong><br>
