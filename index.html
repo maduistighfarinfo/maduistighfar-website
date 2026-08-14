@@ -287,6 +287,57 @@ footer p{margin:5px 0;color:#c7d1cb}
   box-shadow:0 10px 30px rgba(0,0,0,.20);
 }
 
+
+/* ===== TOMBOL LINK / CTA ===== */
+.link-btn{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  width:100%;
+  min-height:58px;
+  padding:12px 16px;
+  margin-top:12px;
+  border-radius:16px;
+  color:#fff !important;
+  font-weight:900;
+  text-decoration:none !important;
+  box-shadow:0 7px 16px rgba(20,45,35,.14);
+  transition:transform .18s ease, box-shadow .18s ease, filter .18s ease;
+}
+.link-btn:hover{transform:translateY(-2px);box-shadow:0 10px 22px rgba(20,45,35,.20);filter:brightness(1.04)}
+.link-btn:active{transform:translateY(0) scale(.99)}
+.link-btn .link-icon{font-size:25px;line-height:1}
+.link-btn .link-arrow{font-size:27px;line-height:1;opacity:.95}
+.btn-wa{background:linear-gradient(135deg,#16b85b,#07853d)}
+.btn-shopee{background:linear-gradient(135deg,#ff5a22,#ee260f)}
+.btn-tiktok{background:linear-gradient(135deg,#202020,#050505)}
+.btn-instagram{background:linear-gradient(135deg,#f51d82,#b928e8);}
+.btn-facebook{background:linear-gradient(135deg,#287be0,#1558b5)}
+.btn-threads{background:linear-gradient(135deg,#222,#000)}
+.btn-gold{background:linear-gradient(135deg,#e6b53e,#c88d17);color:#1f241e !important}
+.clickable-note{text-align:center;color:var(--muted);font-size:13px;font-weight:700;margin-top:10px}
+
+/* Produk: kartu dan tombol */
+.gallery figure{padding-bottom:14px;transition:transform .18s ease,box-shadow .18s ease}
+.gallery figure:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(20,45,35,.13)}
+.gallery figcaption{padding:15px 16px 0;font-size:18px}
+.product-order{padding:0 14px}
+
+/* Partai besar: lebih tegas sebagai layanan bisnis */
+.order-card .caption{padding:18px 20px 22px}
+.order-card .caption p{margin-bottom:0}
+.order-cta{text-align:center;margin-top:30px}
+
+/* Kontak: tombol platform yang mudah dikenali */
+.contact-links{display:grid;gap:10px;margin-top:15px}
+.contact-card .link-btn{margin-top:0}
+.contact-card .contact-address{font-size:16px;line-height:1.7}
+
+/* Footer social buttons */
+.footer-social a{display:inline-flex;align-items:center;gap:8px;padding:10px 15px;border:1px solid rgba(255,255,255,.22);border-radius:999px;font-weight:800;transition:.18s}
+.footer-social a:hover{background:rgba(255,255,255,.10);transform:translateY(-1px)}
+
 @media(max-width:800px){
   .navin{min-height:68px}
   .navlinks a:not(.btn){display:none}
@@ -364,26 +415,32 @@ footer p{margin:5px 0;color:#c7d1cb}
       <figure>
         <img src="madu-istighfar-6.jpg" alt="Madu ISTIGHFAR 130 gram">
         <figcaption>130 gr</figcaption>
+        <div class="product-order"><a class="link-btn btn-wa" href="https://wa.me/6289672209733?text=Halo%20Madu%20Istighfar%2C%20saya%20tertarik%20Madu%20ISTIGHFAR%20130%20gr." target="_blank" rel="noopener"><span><span class="link-icon">💬</span> Pesan Sekarang</span><span class="link-arrow">›</span></a></div>
       </figure>
       <figure>
         <img src="madu-istighfar-2.jpg" alt="Madu ISTIGHFAR 240 gram">
         <figcaption>240 gr</figcaption>
+        <div class="product-order"><a class="link-btn btn-wa" href="https://wa.me/6289672209733?text=Halo%20Madu%20Istighfar%2C%20saya%20tertarik%20Madu%20ISTIGHFAR%20240%20gr." target="_blank" rel="noopener"><span><span class="link-icon">💬</span> Pesan Sekarang</span><span class="link-arrow">›</span></a></div>
       </figure>
       <figure>
         <img src="madu-istighfar-4.jpg" alt="Madu ISTIGHFAR 325 gram">
         <figcaption>325 gr</figcaption>
+        <div class="product-order"><a class="link-btn btn-wa" href="https://wa.me/6289672209733?text=Halo%20Madu%20Istighfar%2C%20saya%20tertarik%20Madu%20ISTIGHFAR%20325%20gr." target="_blank" rel="noopener"><span><span class="link-icon">💬</span> Pesan Sekarang</span><span class="link-arrow">›</span></a></div>
       </figure>
       <figure>
         <img src="madu-istighfar-5.jpg" alt="Madu ISTIGHFAR 450 gram">
         <figcaption>450 gr</figcaption>
+        <div class="product-order"><a class="link-btn btn-wa" href="https://wa.me/6289672209733?text=Halo%20Madu%20Istighfar%2C%20saya%20tertarik%20Madu%20ISTIGHFAR%20450%20gr." target="_blank" rel="noopener"><span><span class="link-icon">💬</span> Pesan Sekarang</span><span class="link-arrow">›</span></a></div>
       </figure>
       <figure>
         <img src="madu-istighfar-1.jpg" alt="Madu ISTIGHFAR 630 gram">
         <figcaption>630 gr</figcaption>
+        <div class="product-order"><a class="link-btn btn-wa" href="https://wa.me/6289672209733?text=Halo%20Madu%20Istighfar%2C%20saya%20tertarik%20Madu%20ISTIGHFAR%20630%20gr." target="_blank" rel="noopener"><span><span class="link-icon">💬</span> Pesan Sekarang</span><span class="link-arrow">›</span></a></div>
       </figure>
       <figure>
         <img src="madu-istighfar-3.jpg" alt="Madu ISTIGHFAR 1,4 kilogram">
         <figcaption>1,4 Kg</figcaption>
+        <div class="product-order"><a class="link-btn btn-wa" href="https://wa.me/6289672209733?text=Halo%20Madu%20Istighfar%2C%20saya%20tertarik%20Madu%20ISTIGHFAR%201%2C4%20Kg." target="_blank" rel="noopener"><span><span class="link-icon">💬</span> Pesan Sekarang</span><span class="link-arrow">›</span></a></div>
       </figure>
     </div>
     <p class="gallery-note">*Foto menampilkan beberapa varian/kemasan. Ketersediaan ukuran mengikuti stok.</p>
@@ -517,9 +574,7 @@ footer p{margin:5px 0;color:#c7d1cb}
       </article>
     </div>
 
-    <div style="text-align:center;margin-top:30px">
-      <a class="btn gold" href="https://wa.me/6289672209733?text=Halo%20Madu%20Istighfar%2C%20saya%20tertarik%20pembelian%20dalam%20jumlah%20banyak.%20Mohon%20informasi%20harga%20dan%20pemesanan.">💬 Hubungi untuk Harga Grosir</a>
-    </div>
+    <div class="order-cta"><a class="link-btn btn-gold" style="max-width:520px;margin:0 auto" href="https://wa.me/6289672209733?text=Halo%20Madu%20Istighfar%2C%20saya%20tertarik%20pembelian%20dalam%20jumlah%20banyak.%20Mohon%20informasi%20harga%20dan%20pemesanan." target="_blank" rel="noopener"><span>💬 Hubungi untuk Harga Grosir</span><span class="link-arrow">›</span></a></div>
   </div>
 </section>
 
@@ -537,18 +592,24 @@ footer p{margin:5px 0;color:#c7d1cb}
       </div>
 
       <div class="contact-card">
-        <h3>📱 Pesan Sekarang</h3>
-        <p>WhatsApp: <a href="https://wa.me/6289672209733">089672209733</a></p>
-        <p>Shopee: <a href="https://shopee.co.id/search?keyword=Madu%20Istighfar" target="_blank" rel="noopener"><b>Madu Istighfar</b></a></p>
-        <p>TikTok Shop: <a href="https://www.tiktok.com/search?q=Madu%20Istighfar" target="_blank" rel="noopener"><b>Madu Istighfar</b></a></p>
+        <h3>🛒 Pesan Sekarang</h3>
+        <p class="clickable-note">Klik tombol untuk langsung membuka kanal pemesanan.</p>
+        <div class="contact-links">
+          <a class="link-btn btn-wa" href="https://wa.me/6289672209733?text=Halo%20Madu%20Istighfar%2C%20saya%20ingin%20memesan%20madu." target="_blank" rel="noopener"><span><span class="link-icon">💬</span> WhatsApp<br><small>089672209733</small></span><span class="link-arrow">›</span></a>
+          <a class="link-btn btn-shopee" href="https://shopee.co.id/search?keyword=Madu%20Istighfar" target="_blank" rel="noopener"><span><span class="link-icon">🛍️</span> Shopee<br><small>Madu Istighfar</small></span><span class="link-arrow">›</span></a>
+          <a class="link-btn btn-tiktok" href="https://www.tiktok.com/search?q=Madu%20Istighfar" target="_blank" rel="noopener"><span><span class="link-icon">🎵</span> TikTok Shop<br><small>Madu Istighfar</small></span><span class="link-arrow">›</span></a>
+        </div>
       </div>
 
       <div class="contact-card">
         <h3>📲 Ikuti Kami</h3>
-        <p>Instagram: <a href="https://www.instagram.com/madu.istighfar/" target="_blank" rel="noopener"><b>@madu.istighfar</b></a></p>
-        <p>Facebook: <a href="https://www.facebook.com/MaduIstighfar" target="_blank" rel="noopener"><b>Madu Istighfar</b></a></p>
-        <p>Threads: <a href="https://www.threads.net/@madu.istighfar" target="_blank" rel="noopener"><b>@madu.istighfar</b></a></p>
-        <p>TikTok: <a href="https://www.tiktok.com/@madu.istighfar.isgf" target="_blank" rel="noopener"><b>@madu.istighfar.isgf</b></a></p>
+        <p class="clickable-note">Klik <b>Kunjungi ›</b> untuk membuka akun kami.</p>
+        <div class="contact-links">
+          <a class="link-btn btn-instagram" href="https://www.instagram.com/madu.istighfar/" target="_blank" rel="noopener"><span><span class="link-icon">📸</span> Instagram<br><small>@madu.istighfar</small></span><span class="link-arrow">›</span></a>
+          <a class="link-btn btn-facebook" href="https://www.facebook.com/MaduIstighfar" target="_blank" rel="noopener"><span><span class="link-icon">ⓕ</span> Facebook<br><small>Madu Istighfar</small></span><span class="link-arrow">›</span></a>
+          <a class="link-btn btn-threads" href="https://www.threads.net/@madu.istighfar" target="_blank" rel="noopener"><span><span class="link-icon">@</span> Threads<br><small>@madu.istighfar</small></span><span class="link-arrow">›</span></a>
+          <a class="link-btn btn-tiktok" href="https://www.tiktok.com/@madu.istighfar.isgf" target="_blank" rel="noopener"><span><span class="link-icon">🎵</span> TikTok<br><small>@madu.istighfar.isgf</small></span><span class="link-arrow">›</span></a>
+        </div>
       </div>
 
       <div class="contact-card">
@@ -579,18 +640,17 @@ footer p{margin:5px 0;color:#c7d1cb}
     <h3>MADU ISTIGHFAR</h3>
     <p>Madu Asli Lebah Liar Apis dorsata Hutan Kapuas Hulu, Kalimantan Barat.</p>
     <div class="footer-social">
-  <a href="https://www.instagram.com/madu.istighfar" target="_blank" rel="noopener">Instagram</a>
-  <a href="https://www.facebook.com/Madu-Istighfar" target="_blank" rel="noopener">Facebook</a>
-  <a href="https://www.threads.net/@madu.istighfar" target="_blank" rel="noopener">Threads</a>
-  <a href="https://www.tiktok.com/@madu.istighfar.isgf" target="_blank" rel="noopener">TikTok</a>
-</div>
-      <a href="https://wa.me/6289672209733">WhatsApp</a>
+      <a href="https://www.instagram.com/madu.istighfar/" target="_blank" rel="noopener">📸 Instagram</a>
+      <a href="https://www.facebook.com/MaduIstighfar" target="_blank" rel="noopener">ⓕ Facebook</a>
+      <a href="https://www.threads.net/@madu.istighfar" target="_blank" rel="noopener">@ Threads</a>
+      <a href="https://www.tiktok.com/@madu.istighfar.isgf" target="_blank" rel="noopener">🎵 TikTok</a>
+      <a href="https://wa.me/6289672209733" target="_blank" rel="noopener">💬 WhatsApp</a>
     </div>
     <p style="margin-top:22px;font-size:13px">© 2026 Madu ISTIGHFAR. Semua hak dilindungi.</p>
   </div>
 </footer>
 
-<a class="float" href="https://wa.me/6289672209733?text=Halo%20Madu%20Istighfar%2C%20saya%20ingin%20bertanya%20tentang%20produk.">💬 Pesan Sekarang</a>
+<a class="float" target="_blank" rel="noopener" href="https://wa.me/6289672209733?text=Halo%20Madu%20Istighfar%2C%20saya%20ingin%20bertanya%20tentang%20produk.">💬 Pesan Sekarang</a>
 
 </body>
 </html>
