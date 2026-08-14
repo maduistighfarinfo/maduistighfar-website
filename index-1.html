@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Madu ISTIGHFAR — Madu asli lebah liar Apis dorsata dari Hutan Kapuas Hulu, Kalimantan Barat. Tersedia berbagai ukuran untuk konsumsi, reseller, toko, distributor, dan kebutuhan usaha.">
+<title>Madu ISTIGHFAR — Madu Asli Lebah Liar Apis dorsata</title>
+<style>
+:root{
+  --forest:#073b2d;--forest2:#0b4d3a;--gold:#dca633;
+  --cream:#fbf7ed;--cream2:#f5ecd8;--text:#26352f;--muted:#68736d;
+  --white:#fff;--line:#e8dfcf;--shadow:0 12px 32px rgba(20,45,35,.12)
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+a{text-decoration:none;color:inherit}
+.wrap{width:min(1120px,calc(100% - 32px));margin:auto}
+.topbar{background:var(--forest);color:#fff;text-align:center;font-size:12px;font-weight:700;padding:8px 12px}
+nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(8px)}
+.navin{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:15px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:1px;color:var(--forest);font-size:20px}
+.brand img{width:48px;height:48px;object-fit:contain;background:var(--forest);border-radius:14px;padding:5px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;padding:14px 22px;font-weight:800;transition:.2s;cursor:pointer}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 18px rgba(0,0,0,.14)}
+.btn-green{background:var(--forest);color:#fff}
+.btn-gold{background:var(--gold);color:#17251f}
+.hero{padding:30px 0 45px}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+.eyebrow{font-size:13px;letter-spacing:2px;font-weight:900;color:var(--gold);text-transform:uppercase}
+h1{font-size:clamp(38px,6vw,68px);line-height:1.02;margin:10px 0 18px;color:var(--forest)}
+h1 span{color:var(--gold)}
+.lead{font-size:18px;color:var(--muted);max-width:620px}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0}
+.trust{display:flex;flex-wrap:wrap;gap:14px;font-size:13px;font-weight:700;color:var(--muted)}
+.hero-img{background:var(--forest);padding:10px;border-radius:34px;box-shadow:var(--shadow)}
+.hero-img img{display:block;width:100%;border-radius:25px}
+section{padding:70px 0}
+.head{text-align:center;margin-bottom:28px}
+.head .eyebrow{font-size:11px}
+.head h2{font-size:32px;line-height:1.15;color:var(--forest);margin:7px 0}
+.head p{color:var(--muted);max-width:650px;margin:0 auto}
+.gallery{background:#fff}
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.product{background:var(--cream);border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:0 6px 18px rgba(30,50,40,.07)}
+.product img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover}
+.product .caption{text-align:center;padding:12px;font-weight:900;color:var(--forest);background:#fff}
+.info{background:var(--cream2)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:0 6px 18px rgba(30,50,40,.06)}
+.card h3{margin-top:0;color:var(--forest)}
+.partai{background:#fff}
+.partai-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.partai-card{background:var(--cream);border-radius:22px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow)}
+.partai-card img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+.partai-card h3{text-align:center;padding:12px;margin:0;color:var(--forest)}
+.cta{text-align:center;margin-top:28px}
+
+.description{background:var(--cream)}
+.description-card{max-width:900px;margin:auto;background:#fff;border:1px solid var(--line);border-radius:24px;padding:28px;box-shadow:var(--shadow)}
+.description-card p{color:var(--text);margin:0 0 18px}
+.description-card h3{color:var(--forest);font-size:22px;margin:28px 0 10px}
+.description-card ul{margin:8px 0 18px;padding-left:22px}
+.description-card li{margin:7px 0}
+.attention{background:#fff3cd;border:1px solid #e2b63b;color:#5b4708;border-radius:14px;padding:15px 18px;font-weight:900;margin-bottom:22px}
+.muted-note{color:var(--muted)!important;font-size:14px}
+
+.contact{background:var(--cream2)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.contact-card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:25px}
+.contact-card h3{color:var(--forest);font-size:23px;margin:0 0 16px}
+.link{color:var(--forest);font-weight:800;text-decoration:underline;text-underline-offset:3px}
+.socials{display:grid;gap:10px}
+.social{display:flex;align-items:center;justify-content:space-between;padding:12px 15px;border:1px solid var(--line);border-radius:14px;background:var(--cream);font-weight:800}
+.legal{background:#fff}
+.legalgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.legalcard{border:1px solid var(--line);border-radius:18px;padding:20px;background:var(--cream)}
+footer{background:var(--forest);color:#fff;padding:45px 0}
+.footerin{text-align:center}
+.footer-logo{width:60px;height:60px;object-fit:contain;background:#fff;border-radius:16px;padding:6px}
+footer h3{margin:10px 0 5px}
+footer p{color:#d8e5df}
+.float{position:fixed;right:18px;bottom:18px;z-index:60;background:var(--gold);color:#17251f;padding:16px 24px;border-radius:999px;font-weight:900;box-shadow:0 12px 30px rgba(0,0,0,.22)}
+@media(max-width:800px){
+ .wrap{width:min(100% - 20px,680px)}
+ .navin{min-height:68px}
+ .brand{font-size:15px}.brand img{width:42px;height:42px}
+ .hero{padding-top:22px}.hero-grid{grid-template-columns:1fr;gap:20px}
+ .hero-grid .hero-copy{order:2}.hero-grid .hero-img{order:1}
+ h1{font-size:42px}.lead{font-size:16px}
+ section{padding:52px 0}
+ .products{grid-template-columns:1fr 1fr;gap:12px}
+ .cards,.partai-grid,.contact-grid,.legalgrid{grid-template-columns:1fr}
+ .card,.contact-card{padding:20px}
+ .head h2{font-size:28px}
+ .btn{padding:12px 17px}
+ .float{right:12px;bottom:12px;padding:14px 19px}
+}
+@media(max-width:420px){.products{grid-template-columns:1fr}.brand{letter-spacing:.5px}.navin>.btn{font-size:12px;padding:11px 14px}}
+</style>
+</head>
+<body>
+<div class="topbar">🍯 MADU ISTIGHFAR • MADU ASLI LEBAH LIAR APIS DORSATA</div>
+
+<nav>
+  <div class="wrap navin">
+    <a class="brand" href="#atas"><img src="logo-isgf.png" alt="Logo ISGF">MADU ISTIGHFAR</a>
+    <a class="btn btn-green" target="_blank" rel="noopener" href="https://wa.me/6289672209733?text=Halo%20Madu%20ISTIGHFAR,%20saya%20ingin%20pesan.">Pesan Sekarang</a>
+  </div>
+</nav>
+
+<main id="atas">
+<section class="hero">
+<div class="wrap hero-grid">
+  <div class="hero-copy">
+    <div class="eyebrow">Madu Hutan • Apis dorsata</div>
+    <h1>Madu Asli Lebah Liar dari <span>Kapuas Hulu</span></h1>
+    <p class="lead">Madu ISTIGHFAR adalah madu asli lebah liar Apis dorsata dari Hutan Kapuas Hulu, Kalimantan Barat.</p>
+    <div class="actions">
+      <a class="btn btn-gold" target="_blank" rel="noopener" href="https://wa.me/6289672209733?text=Halo%20Madu%20ISTIGHFAR,%20saya%20ingin%20bertanya.">💬 Hubungi Kami</a>
+      <a class="btn btn-green" href="#produk">🛒 Lihat Produk</a>
+    </div>
+    <div class="trust"><span>✓ Apis dorsata</span><span>✓ Hutan Kapuas Hulu</span><span>✓ Kalimantan Barat</span></div>
+  </div>
+  <div class="hero-img"><img src="hero-madu-630.jpg" alt="Madu ISTIGHFAR 630 gram"></div>
+</div>
+</section>
+
+<section id="produk" class="gallery">
+<div class="wrap">
+  <div class="head">
+    <div class="eyebrow">Galeri Produk</div>
+    <h2>Pilihan Ukuran Madu ISTIGHFAR</h2>
+    <p>Kenali pilihan kemasan Madu ISTIGHFAR dari kapasitas terkecil hingga terbesar.</p>
+  </div>
+  <div class="products">
+    <a class="product product-link" target="_blank" rel="noopener" href="https://wa.me/6289672209733?text=Halo%20Madu%20ISTIGHFAR%2C%20saya%20ingin%20order%20Madu%20ISTIGHFAR%20ukuran%20130%20gr." aria-label="Order Madu ISTIGHFAR 130 gr">
+      <img src="madu-istighfar-6.jpg" alt="Madu ISTIGHFAR 130 gram">
+      <div class="caption">130 gr</div>
+      <div class="order-label">🛒 Klik untuk Order</div>
+    </a>
+    <a class="product product-link" target="_blank" rel="noopener" href="https://wa.me/6289672209733?text=Halo%20Madu%20ISTIGHFAR%2C%20saya%20ingin%20order%20Madu%20ISTIGHFAR%20ukuran%20240%20gr." aria-label="Order Madu ISTIGHFAR 240 gr">
+      <img src="madu-istighfar-2.jpg" alt="Madu ISTIGHFAR 240 gram">
+      <div class="caption">240 gr</div>
+      <div class="order-label">🛒 Klik untuk Order</div>
+    </a>
+    <a class="product product-link" target="_blank" rel="noopener" href="https://wa.me/6289672209733?text=Halo%20Madu%20ISTIGHFAR%2C%20saya%20ingin%20order%20Madu%20ISTIGHFAR%20ukuran%20325%20gr." aria-label="Order Madu ISTIGHFAR 325 gr">
+      <img src="madu-istighfar-4.jpg" alt="Madu ISTIGHFAR 325 gram">
+      <div class="caption">325 gr</div>
+      <div class="order-label">🛒 Klik untuk Order</div>
+    </a>
+    <a class="product product-link" target="_blank" rel="noopener" href="https://wa.me/6289672209733?text=Halo%20Madu%20ISTIGHFAR%2C%20saya%20ingin%20order%20Madu%20ISTIGHFAR%20ukuran%20450%20gr." aria-label="Order Madu ISTIGHFAR 450 gr">
+      <img src="madu-istighfar-5.jpg" alt="Madu ISTIGHFAR 450 gram">
+      <div class="caption">450 gr</div>
+      <div class="order-label">🛒 Klik untuk Order</div>
+    </a>
+    <a class="product product-link" target="_blank" rel="noopener" href="https://wa.me/6289672209733?text=Halo%20Madu%20ISTIGHFAR%2C%20saya%20ingin%20order%20Madu%20ISTIGHFAR%20ukuran%20630%20gr." aria-label="Order Madu ISTIGHFAR 630 gr">
+      <img src="madu-istighfar-1.jpg" alt="Madu ISTIGHFAR 630 gram">
+      <div class="caption">630 gr</div>
+      <div class="order-label">🛒 Klik untuk Order</div>
+    </a>
+    <a class="product product-link" target="_blank" rel="noopener" href="https://wa.me/6289672209733?text=Halo%20Madu%20ISTIGHFAR%2C%20saya%20ingin%20order%20Madu%20ISTIGHFAR%20ukuran%201%2C4%20Kg." aria-label="Order Madu ISTIGHFAR 1,4 Kg">
+      <img src="madu-istighfar-3.jpg" alt="Madu ISTIGHFAR 1,4 kilogram">
+      <div class="caption">1,4 Kg</div>
+      <div class="order-label">🛒 Klik untuk Order</div>
+    </a>
+  </div>
+</div>
+</section>
+
+<section class="info">
+<div class="wrap">
+ <div class="head"><div class="eyebrow">Keunggulan Produk</div><h2>Kenapa Madu ISTIGHFAR?</h2></div>
+ <div class="cards">
+  <article class="card"><h3>🐝 Lebah Liar Apis dorsata</h3><p>Berasal dari lebah liar Apis dorsata yang hidup di kawasan hutan Kapuas Hulu.</p></article>
+  <article class="card"><h3>🌿 Dari Hutan Kapuas Hulu</h3><p>Identitas kawasan asal menjadi bagian penting dari karakter madu hutan ini.</p></article>
+  <article class="card"><h3>🍯 Tanpa Campuran</h3><p>Diproses dengan menjaga karakter alami madu tanpa penambahan bahan lain.</p></article>
+ </div>
+</div>
+</section>
+
+<section class="partai">
+<div class="wrap">
+ <div class="head"><div class="eyebrow">Layanan Pembelian</div><h2>Pembelian Partai Besar</h2><p>Kami melayani pembelian dalam jumlah banyak untuk reseller, toko, distributor, maupun kebutuhan usaha. Silakan hubungi kami untuk informasi harga dan pemesanan.</p></div>
+ <div class="partai-grid">
+  <article class="partai-card"><img src="partai-besar-1.jpg" alt="Stok madu untuk pembelian partai besar"><h3>Stok Siap Melayani</h3></article>
+  <article class="partai-card"><img src="partai-besar-2.jpg" alt="Madu ISTIGHFAR untuk reseller dan distributor"><h3>Siap Melayani Reseller & Distributor</h3></article>
+  <article class="partai-card"><img src="partai-besar-3.jpg" alt="Produk madu siap pengiriman"><h3>Produk Siap untuk Pengiriman</h3></article>
+ </div>
+ <div class="cta"><a class="btn btn-gold" target="_blank" rel="noopener" href="https://wa.me/6289672209733?text=Halo%20Madu%20ISTIGHFAR,%20saya%20ingin%20informasi%20harga%20grosir%20dan%20pembelian%20partai%20besar.">💬 Tanya Harga Grosir</a></div>
+</div>
+</section>
+
+<section id="kontak" class="contact">
+<div class="wrap">
+ <div class="head"><div class="eyebrow">Kontak</div><h2>Hubungi Kami</h2></div>
+ <div class="contact-grid">
+  <div class="contact-card">
+   <h3>📍 Store / Office</h3>
+   <p>Jl. Pisangan Baru III No. 218, RT 009/RW 007, Kel. Pisangan Baru, Kec. Matraman, Jakarta Timur 13110, DKI Jakarta</p>
+  </div>
+  <div class="contact-card">
+   <h3>📱 Pesan Sekarang</h3>
+   <p>WhatsApp: <a class="link" target="_blank" rel="noopener" href="https://wa.me/6289672209733">089672209733</a></p>
+   <p>Shopee: <a class="link" target="_blank" rel="noopener" href="https://shopee.co.id/madu.istighfar">Madu Istighfar</a></p>
+   <p>TikTok Shop: <a class="link" target="_blank" rel="noopener" href="https://vt.tiktok.com/ZS4xNfxFb/?page=Mall">Madu Istighfar</a></p>
+  </div>
+  <div class="contact-card">
+   <h3>📲 Ikuti Kami</h3>
+   <div class="socials">
+    <a class="social" target="_blank" rel="noopener" href="https://www.instagram.com/madu.istighfar/">📸 Instagram <span>@madu.istighfar ↗</span></a>
+    <a class="social" target="_blank" rel="noopener" href="https://www.facebook.com/MaduIstighfar/">ⓕ Facebook <span>Madu Istighfar ↗</span></a>
+    <a class="social" target="_blank" rel="noopener" href="https://www.threads.net/@madu.istighfar">🧵 Threads <span>@madu.istighfar ↗</span></a>
+    <a class="social" target="_blank" rel="noopener" href="https://www.tiktok.com/@madu.istighfar.isgf">🎵 TikTok <span>@madu.istighfar.isgf ↗</span></a>
+   </div>
+  </div>
+  <div class="contact-card">
+   <h3>🍯 Pesan Madu</h3>
+   <p>Untuk pemesanan, reseller, toko, distributor, maupun kebutuhan usaha, silakan hubungi kami melalui WhatsApp.</p>
+   <a class="btn btn-green" target="_blank" rel="noopener" href="https://wa.me/6289672209733?text=Halo%20Madu%20ISTIGHFAR,%20saya%20ingin%20memesan%20madu.">💬 Pesan via WhatsApp</a>
+  </div>
+ </div>
+</div>
+</section>
+
+
+<section class="description">
+<div class="wrap">
+  <div class="head">
+    <div class="eyebrow">Tentang Produk</div>
+    <h2>Deskripsi Madu ISTIGHFAR</h2>
+  </div>
+
+  <div class="description-card">
+    <div class="attention">⚠️ Attention: Madu ISTIGHFAR Bukan Madu Lebah Ternak Atau Madu Campuran!</div>
+
+    <p><strong>Madu Istighfar</strong> merupakan madu hutan asli yang dihasilkan oleh lebah liar (<em>Apis dorsata</em>) di kawasan hutan Kabupaten Kapuas Hulu, Kalimantan Barat, salah satu sentra madu hutan di Indonesia yang menerapkan praktik panen berkelanjutan.</p>
+
+    <p>Madu dipanen secara tradisional oleh petani madu berpengalaman dengan cara memotong sarang lebah. Selanjutnya, madu ditiriskan secara alami tanpa diperas maupun dipress, sehingga karakter alami madu tetap terjaga.</p>
+
+    <p>Setelah dipanen, madu hanya disaring seperlunya untuk memisahkan kotoran alami, kemudian langsung dikemas tanpa proses pemanasan maupun penambahan bahan lain. Dengan demikian, cita rasa, aroma, dan karakter khas madu hutan tetap terjaga sebagaimana adanya.</p>
+
+    <h3>Keunggulan Produk</h3>
+    <ul>
+      <li>Madu hutan asli dari Kapuas Hulu, Kalimantan Barat</li>
+      <li>Berasal dari lebah liar (<em>Apis dorsata</em>)</li>
+      <li>Dipanen secara tradisional oleh petani madu berpengalaman</li>
+      <li>Ditiriskan secara alami, bukan diperas atau dipress</li>
+      <li>Tanpa pemanasan</li>
+      <li>Tanpa penambahan bahan lain</li>
+      <li>Dikemas setelah penyaringan seperlunya</li>
+      <li>Berasal dari kawasan dengan praktik panen berkelanjutan</li>
+    </ul>
+
+    <h3>Manfaat Madu ISTIGHFAR</h3>
+    <p class="muted-note">Madu dapat menjadi bagian dari pola makan bergizi seimbang. Manfaat berikut merupakan manfaat yang umum dikaitkan dengan konsumsi madu dan bukan pengganti pengobatan medis.</p>
+    <ul>
+      <li>Membantu menjaga daya tahan tubuh sebagai bagian dari pola hidup sehat.</li>
+      <li>Sumber energi alami dari karbohidrat yang mudah digunakan tubuh.</li>
+      <li>Mengandung senyawa antioksidan alami.</li>
+      <li>Membantu memberikan rasa nyaman pada tenggorokan yang kering atau terasa tidak nyaman.</li>
+      <li>Dapat membantu memenuhi kebutuhan energi sebelum maupun sesudah beraktivitas atau berolahraga.</li>
+      <li>Mendukung pemenuhan nutrisi dari pangan alami sebagai bagian dari pola makan bergizi seimbang.</li>
+      <li>Dapat menjadi alternatif pemanis alami untuk menggantikan sebagian gula tambahan.</li>
+      <li>Mengandung senyawa bioaktif alami seperti antioksidan, enzim, asam organik, serta mineral yang secara alami terdapat dalam madu.</li>
+      <li>Dapat digunakan sebagai bagian dari perawatan kulit topikal sesuai kecocokan masing-masing individu.</li>
+      <li>Cocok dikonsumsi sebagai bagian dari pola makan bergizi seimbang.</li>
+    </ul>
+
+    <h3>Informasi Ketersediaan</h3>
+    <p>Madu hutan liar merupakan hasil panen musiman yang mengikuti siklus alami lebah di hutan. Oleh karena itu, persediaan produk dapat terbatas. Apabila stok habis, produk akan tersedia kembali pada musim panen berikutnya.</p>
+  </div>
+</div>
+</section>
+
+<section class="legal">
+<div class="wrap">
+ <div class="head"><div class="eyebrow">Legalitas</div><h2>Informasi Legalitas Produk</h2></div>
+ <div class="legalgrid">
+  <div class="legalcard"><strong>Halal (MUI)</strong><br>21100008991220</div>
+  <div class="legalcard"><strong>P.IRT</strong><br>2026108010624-22</div>
+ </div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="wrap footerin">
+ <img class="footer-logo" src="logo-isgf.png" alt="Logo ISGF">
+ <h3>MADU ISTIGHFAR</h3>
+ <p>Madu Asli Lebah Liar Apis dorsata — Hutan Kapuas Hulu, Kalimantan Barat.</p>
+ <p>© 2026 Madu ISTIGHFAR. Semua hak dilindungi.</p>
+</div>
+</footer>
+
+<a class="float" target="_blank" rel="noopener" href="https://wa.me/6289672209733?text=Halo%20Madu%20ISTIGHFAR,%20saya%20ingin%20pesan.">💬 Pesan Sekarang</a>
+</body>
+</html>
