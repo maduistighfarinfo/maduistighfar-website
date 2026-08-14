@@ -260,9 +260,23 @@ footer p{color:#d8e5df}
   font-style:italic;
   white-space:nowrap;
 }
+/* Bingkai foto Hero */
+.hero-grid img{
+  width:100%;
+  display:block;
+  border:8px solid #064b3c;
+  border-radius:30px;
+  box-sizing:border-box;
+}
 
 /* Tampilan HP */
 @media (max-width:600px){
+
+  .hero-grid img{
+    border-width:8px;
+    border-radius:28px;
+  }
+
   .product-title{
     max-width:100%;
     padding:0 18px;
@@ -270,8 +284,16 @@ footer p{color:#d8e5df}
     line-height:1.18;
     letter-spacing:-0.4px;
   }
+
 }
-@media(max-width:420px){.products{grid-template-columns:1fr}.brand{letter-spacing:.5px}.navin>.btn{font-size:12px;padding:11px 14px}}
+
+@media(max-width:420px){
+  /* CSS produk lainnya */
+}
+
+.products{
+  grid-template-columns:1fr;
+}.brand{letter-spacing:.5px}.navin>.btn{font-size:12px;padding:11px 14px}}
 </style>
 </head>
 <body>
