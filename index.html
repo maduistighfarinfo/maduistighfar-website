@@ -94,7 +94,32 @@ footer p{color:#d8e5df}
  .card,.contact-card{padding:20px}
  .head h2{font-size:28px}
  .btn{padding:12px 17px}
- .float{right:12px;bottom:12px;padding:14px 19px}
+ .float{.product-title{
+  max-width:900px;
+  margin:0 auto;
+  padding:0 20px;
+  font-size:clamp(28px,4vw,46px);
+  line-height:1.15;
+  font-weight:800;
+  letter-spacing:-0.5px;
+  color:var(--forest);
+  text-align:center;
+}
+
+.product-title em{
+  font-style:italic;
+  white-space:nowrap;
+}
+
+/* Tampilan HP */
+@media (max-width:600px){
+  .product-title{
+    max-width:100%;
+    padding:0 18px;
+    font-size:30px;
+    line-height:1.18;
+    letter-spacing:-0.4px;
+  }
 }
 @media(max-width:420px){.products{grid-template-columns:1fr}.brand{letter-spacing:.5px}.navin>.btn{font-size:12px;padding:11px 14px}}
 </style>
@@ -228,7 +253,10 @@ footer p{color:#d8e5df}
 <div class="wrap">
   <div class="head">
     <div class="eyebrow">Tentang Produk</div>
-    <h2>Deskripsi Madu ISTIGHFAR</h2>
+    <h2 class="product-title">
+  Madu Asli Lebah Liar <em>Apis dorsata</em>
+  Hutan Kapuas Hulu Kalimantan Barat
+</h2>
   </div>
 
   <div class="description-card">
